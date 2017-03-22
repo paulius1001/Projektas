@@ -1,0 +1,1829 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin:  0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+h2 {
+   
+    -webkit-margin-before:0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*----------------------ICOMOON--------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?xmfo4t');
+  src:  url('../fonts/icomoon.eot?xmfo4t#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xmfo4t') format('truetype'),
+    url('../fonts/icomoon.woff?xmfo4t') format('woff'),
+    url('../fonts/icomoon.svg?xmfo4t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    
+}
+
+/*-----------------------------LESS-------------------------------*/
+/*-----COLORS-----------*/
+
+@house-background: #1baf5d;
+@icomoon-color: #fff;
+@grey-color: #b6c0c1;
+@grey-darker-color: #566375;
+@note-background: #f19e1f;
+@bus-background: #88499c;
+@girl-background: #e94e38;
+@stud-background: #5527ea;
+@letter-hover: #e94e38;
+@input-bg-color: rgba(0, 0, 0, 0.15);
+@white-font-color: #fff;
+@white-logo-border-color: #fff;
+@white-background-color: #fff;
+@stars-color: #f19e1f;
+@person-color: #566375;
+@post-house-hover: rgba(29, 176, 94, 0.30);
+
+/*-----SIZE-------------*/
+
+@icomoon-size: 20px;
+@big-icomoon-size: 39px;
+@big-icomoon-padding: 30px;
+@text-size14: 14px;
+@text-size12: 12px;
+@text-size16: 16px;
+
+/*===== BORDER RADIUS =========*/
+
+@post-border-radius: 2%;
+
+/*====================================================================================== BODY ===============================================================================================*/
+body {
+    background-color: #f3f1f2;
+    background-size: 12px;
+}
+/*=================================================================================== BODY HEADER ================================================================================*/
+
+.header {
+    width: 100%;
+    position: relative;
+    
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+    }
+    
+    &:before {
+        top: 0;
+        left: 0;
+        background-color: @icomoon-color;
+    }
+    
+    &:after {
+        top: 0;
+        right: 0;
+        background-color: @letter-hover;
+    }
+}
+
+.header-body {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-inner {
+    position: relative;
+    max-width: 982px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Book";
+    z-index: 5;
+    background-color: @icomoon-color;
+}
+
+.logo-image {
+    position: relative;
+
+}
+
+.header-nav {
+    display: block;
+    position: relative;
+}
+.header-nav li a{
+    text-decoration: none;
+    color:#96a6a7;
+    
+}
+
+.header-nav ul > * + *
+{
+    padding-left: 17px;
+}
+.header-nav li{
+    display: inline; 
+    font-size: 14px;
+}
+
+.header-a {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.header-a > a {
+    padding:20px;
+}
+
+.header-si:before {
+    content: '\e904';
+    font-family: 'icomoon';
+    font-size: 22px;
+}
+.header-si {
+    text-decoration: none;
+    background-color: #e2dee0;
+    color: #fff;
+}
+.header-h2 {
+    text-decoration: none;
+    position: relative;
+    background-color: #e94e38;  
+    color: @icomoon-color;
+   
+}
+
+.header-h2 h2:before {
+    content:'\e900';
+    font-family: 'icomoon';
+    font-size: 16px;
+    padding-right: 10px; 
+}
+
+.header-h2 h2:hover {
+    color: @icomoon-color;
+}
+
+.header-h2 h2 {
+    font-size: 14px;
+}
+
+.header-nav ul li a:hover{
+    color: @letter-hover;
+}
+
+.header-si:hover{
+    color: @letter-hover; 
+}
+/*========================================================================== BODY MAIN =========================================================================*/
+
+main a:hover{
+    color:@letter-hover;
+}
+.searchasss {
+    width: 100%;
+    background-image: url(../image/searchas.jpg);
+}
+
+.search-inner {
+    max-width: 476px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 59px 0 29px;
+    font-family: "Franklin Gothic Book";
+}
+
+.search-body {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.search-body > * {
+    padding: 10px;
+}
+
+
+.search-h1 {
+    color: #fff;
+}
+
+.search-body > input, fieldset select{
+    background-color: @input-bg-color;
+    color: @grey-color;
+    appearance: none;
+    padding: 14px;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: #413f3b;
+    
+}
+
+.search-select-element select:after {
+    content: '\e907';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    padding-left: 10px;
+    
+}
+
+.search-button h2{
+    background: #e94e38;
+    border-radius: 25px;
+    padding: 14px 23px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: @icomoon-color;  
+}
+
+.search-button a{
+    text-decoration: none;
+}
+
+/*=================================================== MAIN FILTER =======================================================*/
+
+.filter {
+    width: 100%;
+    background-color: #fff;
+}
+
+.filter-inner {
+    position: relative;
+    max-width: 981px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Book";
+    color: @grey-color;
+    font-size: @text-size12;
+   
+}
+
+.filter-body {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-list > * {
+    display: inline;
+    
+}
+
+.filter-list li a {
+    text-decoration: none;
+    color: @grey-color;
+}
+
+.filter-list li a:hover{
+    color:@letter-hover;
+}
+
+.filter-list > * + * {
+    
+    padding-left: 22px;
+}
+
+.filter-sg > * {
+    padding: 12px;
+} 
+
+.filter-sg > * {
+    background-color: #fff;
+    color: @grey-color;
+    border-radius: 25px;
+    border-color: #413f3b;
+    text-transform: uppercase;
+    border: 2px solid @grey-color;
+    text-decoration: none;
+}
+
+.filter-map:after {
+    content: '\e907';
+    font-family: 'icomoon';
+    padding-left: 10px;
+}    
+
+
+.filter-group {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 30px 10px
+    
+}
+.filter-group h3 {
+    font-size: @text-size12;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+.filter-house:before {
+    content:'\e90a';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    color: @icomoon-color;
+    background-color: @grey-color;
+    padding: 11px;
+    border-radius: 100%;
+}
+
+.filter-house:hover:before {
+    background-color: @house-background;
+}
+
+.filter-girl:before {
+    content:'\e90c';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    color: @icomoon-color;
+    background-color: @grey-color;
+    padding: 11px;
+    border-radius: 100%;
+}
+
+.filter-girl:hover:before {
+    background-color: @girl-background;
+}
+
+.filter-stud:before {
+    content:'\e906';
+    font-family: 'icomoon';
+    font-size: @icomoon-size; 
+    color: @icomoon-color;
+    background-color: @grey-color;
+    padding:  11px;
+    border-radius: 100%;
+}
+
+.filter-stud:hover:before {
+    background-color: @stud-background;
+}
+
+.filter-note:before {
+    content:'\e905';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    color: @icomoon-color;
+    background-color: @grey-color;
+    padding: 11px;
+    border-radius: 100%;
+}
+
+.filter-note:hover:before {
+    background-color: @note-background;
+}
+
+.filter-bus:before {
+    content:'\e90d';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    color: @icomoon-color;
+    background-color: @grey-color;
+    padding: 11px;
+    border-radius: 100%;
+    
+}
+
+.filter-bus:hover:before {
+    background-color: @bus-background;
+}
+
+.filter-list {
+    text-decoration: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.filter-icomoon ul {
+    text-decoration: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.filter-icomoon  ul li {
+    display: inline-block;
+}
+
+.filter-icomoon  ul li + li {
+    padding-left: 10px;
+}
+.filter-icomoon  ul li a:before{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.filter-select select:hover {
+    color:@letter-hover;
+}
+
+.filter-select select{
+    -webkit-appearance: none;
+    border: 0;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Book";
+    color: #b6c0c1;
+    font-size: 12px;
+}
+
+.filter-select:after {
+    content: '\ea50';
+    font-family: 'icomoon';
+    padding-left: 10px;
+    transform: rotate( 180deg );
+}
+/*=================================================== MAIN OFFER=======================================================*/
+
+.offer-inner {
+    max-width: 763px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Franklin Gothic Book";
+    color: @grey-color;
+    padding: 91px 0 144px;
+}
+
+.offer-body {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around; 
+    text-align: center;
+}
+
+.offer-p3 ul{
+     display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around; 
+    -webkit-padding-start: 0;
+}
+
+.offer-p3 ul li{
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around; 
+    width: 357px;
+}
+
+.offer-p3 ul li p{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    padding-left: 34px;
+    text-align: left;
+}
+
+.offer-p3 ul li a{
+
+    
+}
+/*=======================ICOMOON=====================*/
+.offer-p3-a2:before {
+    content: '\e909';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    background-color: @house-background;
+    padding: 20px;
+    border-radius: 100%;
+    color: @icomoon-color;
+}
+
+.offer-p3-a1:before {
+    content: '\e90e';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+    background-color: @house-background;
+    padding: 20px;
+    border-radius: 100%;
+    color: @icomoon-color;
+}
+
+
+
+.offer-icomoon ul {
+    text-decoration: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.offer-icomoon  ul  {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around; 
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+.offer-icomoon  ul li + li {
+    padding-left: 7px;
+}
+
+
+.offer-icomoon  ul li a{
+    color: @icomoon-color;
+    text-decoration: none;
+
+}
+
+.offer-house:before {
+    content:'\e90a';
+    font-family: 'icomoon';
+    font-size: @big-icomoon-size;
+    border: 2px solid @grey-color;
+    color: @grey-color;
+    border-radius: 100%;
+    padding:  @big-icomoon-padding;
+}
+
+.offer-house:hover:before {
+    border: 2px solid @house-background;
+    color: @house-background;
+}
+
+.offer-girl:before {
+    content:'\e90c';
+    font-family: 'icomoon';
+    font-size: @big-icomoon-size;
+    border: 2px solid @grey-color;
+    color: @grey-color;
+    border-radius: 100%;
+    padding:  @big-icomoon-padding;
+}
+
+.offer-girl:hover:before {
+    border: 2px solid @girl-background;
+    color: @girl-background;
+}
+
+.offer-stud:before {
+    content:'\e906';
+    font-family: 'icomoon';
+    font-size: @big-icomoon-size; 
+    border: 2px solid @grey-color;
+    color: @grey-color;
+    border-radius: 100%;
+    padding:  @big-icomoon-padding;
+}
+
+.offer-stud:hover:before {
+    border: 2px solid @stud-background;
+    color: @stud-background;
+}
+
+.offer-note:before {
+    content:'\e905';
+    font-family: 'icomoon';
+    font-size: @big-icomoon-size;
+    border: 2px solid @grey-color;
+    color: @grey-color;
+    border-radius: 100%;
+    padding:  @big-icomoon-padding;
+}
+
+.offer-note:hover:before {
+    border: 2px solid @note-background;
+    color: @note-background;
+}
+
+.offer-bus:before {
+    content:'\e90d';
+    font-family: 'icomoon';
+    font-size: @big-icomoon-size;
+    border: 2px solid @grey-color;
+    color: @grey-color;
+    border-radius: 100%;
+    padding:  @big-icomoon-padding;
+    
+}
+
+.offer-bus:hover:before {
+    border: 2px solid @bus-background;
+    color: @bus-background;
+}
+/*================================================ICOMOON=FINISHED=======================================================*/
+.offer-h2 {
+    color: @house-background;
+    line-height: normal;
+    padding: 37px 0 48px;
+}
+
+.offer-hr {
+    padding: 0 25px;
+    background-color: @grey-color;
+    display: inline-block;
+}
+
+.offer-p1 h2 {
+    color:@grey-darker-color;
+}
+
+.offer-p1 > p {
+    margin: 0;
+    padding: 16px 0 71px;
+}
+/*=================================================== MAIN POST =======================================================*/
+
+.post-inner {
+    max-width: 982px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Franklin Gothic Book";
+    color: @grey-color;
+    padding: 62px 0 36px;
+    border-bottom: 1px solid @grey-color;
+    
+}
+
+.post-body {
+
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+
+.post-body > div {
+    margin:0 5px 30px 5px;
+}
+
+.post-body p, h3, h4{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+.post-body p {
+    font-size: @text-size14;
+}
+
+.post-body h4, h3 {
+    font-size: @text-size12;
+}
+
+.post-a {
+    text-decoration: none;
+    color: @grey-color;
+    padding-top: 41px;
+}
+.post-a > h2{
+    text-align: center;
+}
+
+.post-a h2:after {
+    content: '\ea3c';
+    font-family: 'icomoon';
+    font-size: 16px;
+    padding-left: 8px;
+}
+/*=========HOUSE=============*/
+.post-house {
+//    padding: 30px 0 30px;
+    background-color: @white-background-color;
+    border-radius: @post-border-radius;
+    flex: 1;
+}
+
+
+.post-house-body {
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 14px;
+    
+}
+
+.post-price {
+    position: relative;
+}
+
+.post-price img{
+    border-bottom: 3px solid @house-background;
+}
+
+.post-price h3{
+    align-self: center;
+    color: @white-font-color;
+    background-color: @house-background;
+    padding: 8px 13px;
+    border-radius: 100px;
+    position: absolute;
+    top: 7px;
+    right: 1px;
+}
+
+
+.house-logo{
+    text-decoration: none;
+    align-self: center;
+    position: absolute;
+    bottom: -12px;
+    left: 32%;
+}
+
+.house-logo:before {
+    content: '\e90a';
+    font-family: 'icomoon';
+    font-size: 28px;
+    padding: 20px;
+     background-color: @house-background;
+    border-radius: 100%;
+    border: 3px solid @white-logo-border-color;
+    color: @white-logo-border-color;
+}  
+
+
+.post-vision {
+    text-transform: uppercase;
+    color:@house-background;
+    padding-bottom: 7px;
+}
+
+.post-house h4 {
+    color: @grey-color;
+}
+.post-house h4:before {
+    content:'\e9d9''\e9d9''\e9d9''\e9d9''\e9d9';
+    font-family: 'icomoon';
+    font-size: 10px;
+    color:@stars-color;
+}
+
+.post-hover {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: @post-house-hover;
+}
+
+.post-hover:hover {
+    display: inline-block;
+}
+/*=========FESTIVALS=============*/
+.post-festivals {
+//    padding: 30px 0 30px;
+    background-color: @white-background-color;
+    border-radius: @post-border-radius;
+    flex: 1;
+}
+
+.post-festivals-body {
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 14px;
+    
+}
+
+.festivals-body {
+    position: relative;
+}
+
+.festivals-body img{
+    border-bottom: 3px solid @note-background;
+}
+
+.festivals-logo{
+    text-decoration: none;
+    position: absolute;
+    bottom: -12px;
+    left: 32%;
+    
+    
+}
+
+.festivals-logo:before {
+    content: '\e905';
+    font-family: 'icomoon';
+    font-size: 28px;
+    padding: 20px;
+    background-color: @note-background;
+    border-radius: 100%;
+    border: 3px solid @white-logo-border-color;
+    color: @white-logo-border-color;
+}  
+
+
+.post-longbeach {
+    text-transform: uppercase;
+    color:@note-background;
+    padding-bottom: 7px;
+}
+
+.post-festivals h4 {
+    color: @grey-color;
+}
+.post-festivals h4:before {
+    content:'\e9d9''\e9d9''\e9d9''\e9d9''\e9d9';
+    font-family: 'icomoon';
+    font-size: 10px;
+    color:@stars-color;
+}
+/*================== TRANSPORT  ====================*/
+.post-trasport {
+//    padding: 30px 0 30px;
+    background-color: @white-background-color;
+    border-radius: @post-border-radius;
+    flex: 1;
+}
+
+.post-trasport-body {
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 14px;
+    
+}
+
+.transport-body {
+    position: relative;
+}
+
+.transport-body img{
+    border-bottom: 3px solid @bus-background;
+}
+
+.trasport-logo{
+    text-decoration: none;
+    position: absolute;
+    bottom: -12px;
+    left: 32%;
+}
+
+.trasport-logo:before {
+    content: '\e90d';
+    font-family: 'icomoon';
+    font-size: 28px;
+    padding: 20px;
+    background-color: @bus-background;
+    border-radius: 100%;
+    border: 3px solid @white-logo-border-color;
+    color: @white-logo-border-color;
+}  
+
+.post-bustrans {
+    text-transform: uppercase;
+    color:@bus-background;
+    padding-bottom: 7px;
+}
+
+.post-trasport h4 {
+    color: @grey-color;
+}
+.post-trasport h4:before {
+    content:'\e9d9''\e9d9''\e9d9''\e9d9''\e9d9';
+    font-family: 'icomoon';
+    font-size: 10px;
+    color:@stars-color;
+}
+/*==================BIG POST====================*/
+.post-comment {
+//    padding: 30px 0 30px;
+    background-color: @white-background-color;
+    border-radius: @post-border-radius;
+    flex: 2;
+}
+
+.post-comment-body {
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 14px;
+    
+}
+
+.post-main-div {
+    padding: 40px 0 20px;
+}
+
+.post-comment-body h5{
+    padding-bottom: 14px;
+    color: @person-color;
+    font-family:"Franklin Gothic Book";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.comment-body {
+    position: relative;
+}
+
+
+.comment-body img{
+    border-bottom: 3px solid @house-background;
+}
+
+.comment-logo{
+    text-decoration: none;
+    position: absolute;
+    bottom: -10%;
+    left: 6%;   
+}
+
+.comment-logo:before {
+    content: '\e90a';
+    font-family: 'icomoon';
+    font-size: 28px;
+    padding: 20px;
+    background-color: @house-background;
+    border-radius: 100%;
+    border: 3px solid @white-logo-border-color;
+    color: @white-logo-border-color;
+}  
+.post-comment p {
+    max-width: 300px;
+    
+}
+
+.post-bustrans {
+    text-transform: uppercase;
+    color:@bus-background;
+    padding-bottom: 7px;
+}
+
+.post-comment h4 {
+    color: @grey-color;
+}
+
+.post-comment h4:before {
+    content:'\e9d9''\e9d9''\e9d9''\e9d9''\e9d9';
+    font-family: 'icomoon';
+    font-size: 10px;
+    color:@stars-color;
+}
+
+.post-main-div {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.post-main-div img{
+    padding-right: 25px;
+    border:0;
+}
+
+.post-main-div div p, h5{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.post-main-div div p{
+   padding: 0;
+}
+
+.big-stars {
+    padding-bottom: 20px;
+}
+
+.big-stars:before {
+    content:'\e9d9''\e9d9''\e9d9''\e9d9''\e9d9';
+    font-family: 'icomoon';
+    font-size: 18px;
+    color:@stars-color;
+    padding-bottom: 20px;
+}
+/*==================BIG POST 2====================*/
+.post-comment2 {
+//    padding: 30px 0 30px;
+    background-color: @white-background-color;
+    border-radius: @post-border-radius;
+    flex: 2;
+}
+
+.post-comment2-body {
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 14px;
+    
+}
+
+.post-main-div {
+    padding: 20px 0 20px;
+}
+
+.post-comment2-body h5{
+    padding-bottom: 14px;
+    color: @person-color;
+    font-family:"Franklin Gothic Book";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.comment2-body {
+    position: relative;
+}
+
+.stars {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: absolute;
+    bottom: 5%;
+    left: 31%;
+}
+
+.stars h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.comment2-body img{
+    border-bottom: 3px solid @note-background;
+}
+
+.comment2-logo{
+    text-decoration: none;
+    position: absolute;
+    bottom: -10%;
+    left: 6%;
+}
+
+.comment2-logo:before {
+    content: '\e905';
+    font-family: 'icomoon';
+    font-size: 28px;
+    padding: 20px;
+    background-color: @note-background;
+    border-radius: 100%;
+    border: 3px solid @white-logo-border-color;
+    color: @white-logo-border-color;
+}  
+.post-comment2 p {
+    max-width: 300px;
+    
+}
+
+.comment2-vision {
+    text-transform: uppercase;
+    color:@note-background;
+    padding-bottom: 7px;
+}
+
+.post-comment2 h4 {
+    color: @grey-color;
+    font-size: 15px;
+}
+
+.post-comment2 h4:before {
+    content:'\e9d9''\e9d9''\e9d9''\e9d9';
+    font-family: 'icomoon';
+    font-size: 13px;
+    color:@stars-color;
+}
+
+.post-main-div {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.post-main-div img{
+    padding-right: 25px;
+    border:0;
+}
+
+.post-main-div div p, h5{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.post-main-div div p{
+   padding: 0;
+}
+
+/*==================  ====================*/
+
+
+.post-body-post div + div {
+    padding-left: 10px;
+}
+
+.post-p {
+    padding-top: 50px;
+}
+
+/*==================================================================== BODY FOOTER =============================================================================*/
+footer {
+    background-image: url(../image/footer-background.jpg);
+}
+
+.footer-inner {
+    max-width: 982px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Franklin Gothic Book";
+    color: @grey-color;
+    padding: 62px 0 64px;
+}
+
+.footer-body {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.footer-hr {
+    padding: 54px 0 44px;
+}
+
+.footer-subscribe {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: @input-bg-color;
+    color: #fff;
+    appearance: none;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: #413f3b;
+}
+
+.footer-h2 {
+    padding-bottom: 50px;
+}
+
+footer h2 {
+    color: @icomoon-color;
+    padding-bottom: 25px;
+}
+
+.footer-subscribe a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @icomoon-color;
+    padding: 20px 27px;
+    border-width: 1px;
+    border-radius: 47px;
+    background-color: @letter-hover;
+}
+
+.footer-subscribe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+    padding-left: 25px;
+}
+
+.footer-subscribe input:before {
+    content:'\e901';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+}
+
+footer hr {
+    width: 982px;
+    border-color: @input-bg-color;
+    display: inline-block;
+    
+}
+
+.footer-li{
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:space-around;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer ul {
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.footer-li div + div {
+    padding-left: 228px;
+}
+
+.footer-li ul {
+    -webkit-padding-start: 0;
+}
+
+.footer-li h2 {
+    font-size: 16px;
+    text-decoration: underline;
+    
+}
+
+.footer-li-3 nav ul li {
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+.footer-li-3 nav ul li + li {
+    padding-left: 20px;
+}
+
+.footer-li-3 a:hover {
+    color:@letter-hover;
+}
+
+.footer-li-3 a {
+    text-decoration: none;
+    color: @grey-color;
+}
+
+.facebook:before {
+    content:'\ea90';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+}
+
+.twiter:before {
+    content:'\e901';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+}
+
+.google:before {
+    content:'\ea8b';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+}
+
+.youtube:before {
+    content:'\e908';
+    font-family: 'icomoon';
+    font-size: @icomoon-size;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
