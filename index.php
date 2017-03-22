@@ -187,11 +187,11 @@
                             
                             <ul class="fico">
                                 
-                                <li><a href="#" data-filter="filter-house" class="filter-house">filter-house</a></li>
-                                <li><a href="#" data-filter="filter-girl" class="filter-girl">filter-girl</a></li>
-                                <li><a href="#" data-filter="filter-stud" class="filter-stud">filter-stud</a></li>
-                                <li><a href="#" data-filter="filter-note" class="filter-note">filter-note</a></li>
-                                <li><a href="#" data-filter="filter-bus" class="filter-bus">filter-bus</a></li>
+                                <li><a href="#" data-filter="filter-house" class="filter-house"></a></li>
+                                <li><a href="#" data-filter="filter-girl" class="filter-girl"></a></li>
+                                <li><a href="#" data-filter="filter-stud" class="filter-stud"></a></li>
+                                <li><a href="#" data-filter="filter-note" class="filter-note"></a></li>
+                                <li><a href="#" data-filter="filter-bus" class="filter-bus"></a></li>
                                  
                             </ul>
 
